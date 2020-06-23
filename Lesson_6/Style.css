@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(134, 131, 131);
+}
+
+.gallery-list {
+    display: flex;
+}
+
+.set-list-view:checked ~ .gallery-list {
+    flex-direction: column;
+}
+
+.set-thumbnails-view:checked ~ .gallery-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+.set-list-view:checked ~ .gallery-list .element{
+    height: 200px;
+  }
+
+.set-thumbnails-view:checked ~ .gallery-list .element{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    width: 200px;
+  }
+
+.gallery-list .element {
+    display: flex;
+    margin: 10px;
+    background: #fff;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+p {
+    padding: 5px;
+}
